@@ -10,9 +10,11 @@ import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
 
+y_pos = -1
+filename = "Data.csv"
+
 # importing the dataset
-PATH = "/home/cleandersonlins/Documents/Estudos/ML/Machine_Learning/Part_1_Data_Preprocessing/"
-dataset = pd.read_csv(PATH + "Data.csv")
+dataset = pd.read_csv(filename)
 X = dataset.iloc[:, :-1].values
 Y = dataset.iloc[:, 3].values
 
