@@ -47,15 +47,22 @@ X_opt = X[:, [0, 1, 2, 3, 4, 5]]
 reg_OLS = sm.OLS(endog=Y, exog=X_opt).fit()
 reg_OLS.summary()
 
-
 # removed the highest P value
 X_opt = X[:, [0, 1, 3, 4, 5]]
 reg_OLS = sm.OLS(endog=Y, exog=X_opt).fit()
 reg_OLS.summary()
 
+X_opt = X[:, [0, 3, 4, 5]]
+reg_OLS = sm.OLS(endog=Y, exog=X_opt).fit()
+reg_OLS.summary()
 
+X_opt = X[:, [0, 3, 5]]
+reg_OLS = sm.OLS(endog=Y, exog=X_opt).fit()
+reg_OLS.summary()
 
-
+X_opt = X[:, [0, 3]]
+reg_OLS = sm.OLS(endog=Y, exog=X_opt).fit()
+reg_OLS.summary()
 
 
 
